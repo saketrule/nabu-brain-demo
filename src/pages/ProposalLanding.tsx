@@ -15,9 +15,9 @@ export function ProposalLanding() {
                     <Sparkles size={14} /> Proposal Demo
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 font-serif">
-                    Nabu Displai <br />
+                    Nabu Proposal <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-secondary-light">
-                        Proposal
+                        for Displai
                     </span>
                 </h1>
                 <p className="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">

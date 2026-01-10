@@ -46,7 +46,7 @@ export function WorkflowRedesigner() {
                     Custom AI Agent Workflows
                 </h1>
                 <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                    Transform your manual restaurant operations into self-driving systems. Our custom AI Agents handle everything from menu compliance audits to generating data-backed daily specials, freeing your team to focus on hospitality. These aren't just tools—they're intelligent partners that work 24/7.
+                    We introduce custom AI workflows to streamline internal processes, so Displai can maximize the volume of clients it serves - From lead generation to output quality verification. Below is an example of specific use cases and how they can be automated.
                 </p>
             </motion.div>
 
