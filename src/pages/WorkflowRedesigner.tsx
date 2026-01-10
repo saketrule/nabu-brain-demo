@@ -46,7 +46,7 @@ export function WorkflowRedesigner() {
                     Workflow Redesigner
                 </h1>
                 <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                    Workflow Designer which will automate common usecases for the company.
+                    Custom workflows to automate the most important tasks to increase efficiency. The following scenarios are example workflows that can be built.
                 </p>
             </motion.div>
 
