@@ -17,7 +17,7 @@ export interface MenuTemplate {
 export const MENU_TEMPLATES: Record<string, MenuTemplate> = {
     default: {
         id: 't1',
-        name: 'Bistro Modern',
+        name: 'Bistro Menu (Sample)',
         style: 'modern',
         categories: [
             {

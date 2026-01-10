@@ -49,7 +49,7 @@ export const Hero = () => {
                     className="flex items-center justify-center gap-4"
                 >
                     <Button size="lg" className="gap-2">
-                        Try the Demo <ArrowRight className="w-5 h-5" />
+                        Upload Menu Photo <ArrowRight className="w-5 h-5" />
                     </Button>
                     <Button variant="outline" size="lg">
                         Watch Video

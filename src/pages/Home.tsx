@@ -11,7 +11,9 @@ export function Home() {
             <div className="max-w-7xl mx-auto px-4 pb-32">
                 <div className="mb-12 text-center">
                     <h2 className="text-3xl font-bold mb-4">From Text to Design, Instantly</h2>
-                    <p className="text-slate-400">Client selects reference designs, and Nabu does the rest.</p>
+                    <p className="text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                        Getting to a design from initial ideas (Like Menu Text / Image) and Displai Templates to let clients see sample menu designs instantly.
+                    </p>
                 </div>
 
                 <div className="grid lg:grid-cols-[1fr,auto,1fr] gap-8 items-center">
