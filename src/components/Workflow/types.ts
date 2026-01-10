@@ -9,7 +9,7 @@ export type WorkflowNode = {
 };
 
 export type Scenario = {
-    id: 'inbox-chaos' | 'content-factory' | 'lead-chaser';
+    id: string;
     title: string;
     description: string;
     messyProcess: string;

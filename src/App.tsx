@@ -15,7 +15,9 @@ function App() {
               <Link to="/workflow-redesigner" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
                 Workflow Redesigner
               </Link>
-              <div className="text-sm font-medium text-slate-400">Brain Demo v0.1</div>
+              <Link to="/" className="text-sm font-medium text-slate-400 hidden md:block hover:text-white transition-colors">
+                Turn Napkins into Displai Signage
+              </Link>
             </div>
           </div>
         </nav>
