@@ -12,7 +12,7 @@ export const StickyCTA = () => {
             <div className="mx-4 p-4 rounded-2xl bg-slate-900/90 backdrop-blur-xl border border-white/10 shadow-2xl flex items-center justify-between gap-4">
                 <div>
                     <p className="text-sm font-medium text-white">Ready to build?</p>
-                    <p className="text-xs text-slate-400">Get early access to NABU Brain.</p>
+                    <p className="text-xs text-slate-400">Get early access to Nabu Displai.</p>
                 </div>
                 <Button size="sm" variant="secondary">
                     Book Demo

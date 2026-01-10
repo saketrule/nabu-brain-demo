@@ -17,7 +17,7 @@ export const Hero = () => {
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8"
                 >
                     <Sparkles className="w-4 h-4 text-secondary" />
-                    <span className="text-sm font-medium text-secondary">New: NABU Embedded AI</span>
+                    <span className="text-sm font-medium text-secondary">New: Nabu Displai</span>
                 </motion.div>
 
                 <motion.h1
@@ -28,7 +28,7 @@ export const Hero = () => {
                 >
                     Turn Napkins into <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-secondary-light">
-                        No-Code Websites
+                        Displai Signage
                     </span>
                 </motion.h1>
 
@@ -38,7 +38,7 @@ export const Hero = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto"
                 >
-                    Drag, drop, and let NABU's visual intelligence digitize your menu instantly.
+                    Drag, drop, and let Nabu Displai's visual intelligence digitize your menu instantly.
                     Then, just ask AI to style it.
                 </motion.p>
 
