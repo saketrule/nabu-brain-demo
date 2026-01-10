@@ -27,7 +27,7 @@ export const Hero = () => {
                     className="text-5xl md:text-7xl font-bold tracking-tight mb-8 font-serif"
                 >
                     Turn Napkins into <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-secondary-light">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">
                         Displai Signage
                     </span>
                 </motion.h1>
