@@ -43,10 +43,10 @@ export function WorkflowRedesigner() {
                     <Sparkles size={14} /> Solution 2
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6 bg-gradient-to-r from-white via-white to-slate-400 bg-clip-text text-transparent">
-                    Workflow Redesigner
+                    Custom AI Agent Workflows
                 </h1>
-                <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                    Custom workflows to automate the most important tasks to increase efficiency. The following scenarios are example workflows that can be built.
+                <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                    Transform your manual restaurant operations into self-driving systems. Our custom AI Agents handle everything from menu compliance audits to generating data-backed daily specials, freeing your team to focus on hospitality. These aren't just tools—they're intelligent partners that work 24/7.
                 </p>
             </motion.div>
 

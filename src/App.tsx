@@ -4,6 +4,8 @@ import { StickyCTA } from './components/Layout/StickyCTA';
 import { Home } from './pages/Home';
 import { WorkflowRedesigner } from './pages/WorkflowRedesigner';
 
+import { ProposalLanding } from './pages/ProposalLanding';
+
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
@@ -12,19 +14,20 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <Link to="/" className="font-bold text-xl tracking-tighter hover:text-primary transition-colors">Nabu Displai</Link>
             <div className="flex items-center gap-6">
-              <Link to="/" className="text-sm font-medium text-slate-400 hidden md:block hover:text-white transition-colors">
+              <Link to="/visualizer" className="text-sm font-medium text-slate-400 hidden md:block hover:text-white transition-colors">
                 Turn Napkins into Displai Signage
               </Link>
-              <Link to="/workflow-redesigner" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
-                Workflow Redesigner
+              <Link to="/workflows" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
+                Custom AI Agent Workflows
               </Link>
             </div>
           </div>
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/workflow-redesigner" element={<WorkflowRedesigner />} />
+          <Route path="/" element={<ProposalLanding />} />
+          <Route path="/visualizer" element={<Home />} />
+          <Route path="/workflows" element={<WorkflowRedesigner />} />
         </Routes>
 
         <StickyCTA />
