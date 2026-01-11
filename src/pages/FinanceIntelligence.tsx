@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import {
     TrendingDown,
-    TrendingUp,
     AlertTriangle,
     Database,
     Bot,
@@ -9,7 +8,10 @@ import {
     Sparkles,
     Search,
     ArrowRight,
-    LineChart
+    LineChart,
+    Users,
+    PieChart,
+    BarChart3
 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -22,20 +24,20 @@ export function FinanceIntelligence() {
         // Simulate AI thinking and responding
         setAnswer(null);
         setTimeout(() => {
-            if (q.toLowerCase().includes('revenue')) {
+            if (q.toLowerCase().includes('churn') || q.toLowerCase().includes('customer')) {
                 setAnswer({
-                    text: "Revenue dropped 6.8% primarily due to a 12% decline in Enterprise subscription renewals in the US East region. Direct sales for new licenses remained flat.",
-                    next: "Check 'Renewal Rate' trends"
+                    text: "Customer X's usage dropped 40% in the last 30 days. Support tickets indicate unresolved integration issues with their POS system.",
+                    next: "View Customer X health score"
                 });
-            } else if (q.toLowerCase().includes('cost')) {
+            } else if (q.toLowerCase().includes('seller') || q.toLowerCase().includes('retention')) {
                 setAnswer({
-                    text: "Operating costs rose 4.1% driven by a spike in cloud rendering usage for high-res video exports. This correlates with the recent feature launch.",
-                    next: "View cloud usage logs"
+                    text: "Sarah J. has the highest retention rate (98%) in the Enterprise segment. Her accounts show 3x higher adoption of the 'Menu Scheduler' feature.",
+                    next: "View Sarah's playbook"
                 });
             } else {
                 setAnswer({
-                    text: "EBITDA margin will likely compress to 18.2% if trends persist. However, the projected uptake of the 'Spring Menu' promo could restore margins to ~21% by next month.",
-                    next: "Run profitability scenario"
+                    text: "Tier-2 churn is primarily driven by price sensitivity. 60% of churned accounts cited 'Cost' as the main reason in exit surveys.",
+                    next: "Analyze pricing sensitivity"
                 });
             }
         }, 800);
@@ -76,17 +78,17 @@ export function FinanceIntelligence() {
             >
                 <div className="absolute top-0 right-0 p-32 bg-blue-500/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2" />
 
-                <h2 className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-8">Today's Financial Health</h2>
+                <h2 className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-8">Today's Health Check</h2>
 
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div className="text-6xl font-bold font-serif mb-2 text-white">$ 1.42 M</div>
+                        <div className="text-6xl font-bold font-serif mb-2 text-white">$ 94.42 M</div>
                         <div className="text-lg text-slate-400 mb-4">Monthly Revenue (MTD)</div>
                         <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-500/10 text-red-400 rounded-full text-sm font-medium border border-red-500/20">
-                            <TrendingDown size={16} /> 6.8% vs last month
+                            <AlertTriangle size={16} /> 23 accounts at risk
                         </div>
                         <div className="mt-4 flex items-center gap-2 text-yellow-500 text-sm font-medium">
-                            <AlertTriangle size={16} /> Requires attention
+                            <TrendingDown size={16} /> Trending below forecast
                         </div>
                     </div>
 
@@ -95,7 +97,7 @@ export function FinanceIntelligence() {
                             <Sparkles size={12} /> AI Insight
                         </div>
                         <p className="text-slate-300 leading-relaxed">
-                            "Revenue is trending <span className="text-red-400 font-bold">6.8% below last month</span>, primarily driven by a decline in <span className="text-white">Enterprise subscription renewals</span>. Operational costs remain stable, but EBITDA margin is projected to fall by 2.1% if the mix shift to lower-margin design services continues."
+                            "Revenue is trending below forecast, driven by <span className="text-red-400 font-bold">23 accounts at risk of churn</span> (high usage drop). Enterprise segment retention is stable, but Tier-2 accounts are showing warning signs."
                         </p>
                     </div>
                 </div>
@@ -109,7 +111,7 @@ export function FinanceIntelligence() {
                 </h2>
 
                 <div className="grid md:grid-cols-3 gap-6">
-                    {/* Card 1: Revenue */}
+                    {/* Card 1: Churn Risk */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -118,20 +120,20 @@ export function FinanceIntelligence() {
                         className="bg-slate-900 border border-white/10 p-6 rounded-2xl hover:border-red-500/30 transition-colors group"
                     >
                         <div className="flex justify-between items-start mb-4">
-                            <div className="text-slate-400 text-sm font-medium">Net Revenue</div>
+                            <div className="text-slate-400 text-sm font-medium">Churn Risk</div>
                             <div className="text-red-400 bg-red-500/10 px-2 py-1 rounded text-xs font-bold flex items-center gap-1">
-                                <TrendingDown size={12} /> 8.3% WoW
+                                <Users size={12} /> 5 Critical
                             </div>
                         </div>
                         <p className="text-sm text-slate-300 leading-relaxed mb-4">
-                            The drop is concentrated in the US East region, where <span className="text-white">Q1 Menu Refresh campaigns</span> had lower renewal rates than forecasted.
+                            <span className="text-white">5 accounts showed usage drop &gt; 15%</span> this week. All are on the legacy 'Basic' plan and have not enabled the new menu editor.
                         </p>
                         <a href="#" className="text-xs text-blue-400 hover:text-blue-300 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                            See supporting data <ArrowRight size={10} />
+                            View account list <ArrowRight size={10} />
                         </a>
                     </motion.div>
 
-                    {/* Card 2: Costs */}
+                    {/* Card 2: Segmentation */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -140,17 +142,17 @@ export function FinanceIntelligence() {
                         className="bg-slate-900 border border-white/10 p-6 rounded-2xl hover:border-yellow-500/30 transition-colors group"
                     >
                         <div className="flex justify-between items-start mb-4">
-                            <div className="text-slate-400 text-sm font-medium">Operating Costs</div>
+                            <div className="text-slate-400 text-sm font-medium">Segment Performance</div>
                             <div className="text-yellow-400 bg-yellow-500/10 px-2 py-1 rounded text-xs font-bold flex items-center gap-1">
-                                <TrendingUp size={12} /> 4.1% WoW
+                                <PieChart size={12} /> Tier-2 Drop
                             </div>
                         </div>
                         <p className="text-sm text-slate-300 leading-relaxed">
-                            <span className="text-white">Cloud rendering costs</span> increased due to high demand for video exports in the new 'Dynamic Boards' feature.
+                            <span className="text-white">Tier-2 fast casual renewal rate dropped 8%</span>, while Enterprise remains strong. This segment is price-sensitive to the Q4 markup.
                         </p>
                     </motion.div>
 
-                    {/* Card 3: Margin */}
+                    {/* Card 3: Pipeline */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -159,13 +161,13 @@ export function FinanceIntelligence() {
                         className="bg-slate-900 border border-white/10 p-6 rounded-2xl hover:border-orange-500/30 transition-colors group"
                     >
                         <div className="flex justify-between items-start mb-4">
-                            <div className="text-slate-400 text-sm font-medium">EBITDA Margin</div>
+                            <div className="text-slate-400 text-sm font-medium">Pipeline Health</div>
                             <div className="text-orange-400 bg-orange-500/10 px-2 py-1 rounded text-xs font-bold flex items-center gap-1">
-                                <TrendingDown size={12} /> 2.1 pts
+                                <BarChart3 size={12} /> Coverage Gap
                             </div>
                         </div>
                         <p className="text-sm text-slate-300 leading-relaxed">
-                            Margin contraction is driven by a shift from high-margin SaaS subscriptions to lower-margin <span className="text-white">Custom Design services</span> this month.
+                            <span className="text-white">Top sellers have 2x pipeline coverage</span>, but 3 sellers are below 50% quota coverage, putting the Q1 target at risk.
                         </p>
                     </motion.div>
                 </div>
@@ -187,22 +189,22 @@ export function FinanceIntelligence() {
                 <div className="bg-slate-900/50 border border-blue-500/20 rounded-xl p-6 mb-6">
                     <h3 className="text-lg font-semibold text-white mb-2">Primary Recommendation</h3>
                     <p className="text-lg text-slate-200">
-                        "Launch a 'Spring Menu' promo for Tier-2 restaurants to offset the Enterprise renewal gap. <span className="text-green-400 font-bold">This could recover an estimated $110k–$140k in monthly revenue.</span>"
+                        "Contact <span className="text-green-400 font-bold">these 5 at-risk accounts</span> immediately. They represent $420k in annual recurring revenue and their usage patterns suggest high churn probability."
                     </p>
                 </div>
 
                 <div className="flex flex-wrap gap-6 text-sm">
                     <div>
                         <div className="text-slate-500 mb-1">Confidence</div>
-                        <div className="font-bold text-green-400">High</div>
+                        <div className="font-bold text-green-400">Very High</div>
                     </div>
                     <div>
                         <div className="text-slate-500 mb-1">Data used</div>
-                        <div className="text-slate-300">Revenue, Churn Rate, Seasonality, Pricing Models</div>
+                        <div className="text-slate-300">Usage Logs, Support Tickets, Contract End Date</div>
                     </div>
                     <div>
                         <div className="text-slate-500 mb-1">Time to impact</div>
-                        <div className="text-slate-300 text-white font-bold">7–14 days</div>
+                        <div className="text-slate-300 text-white font-bold">Immediate</div>
                     </div>
                 </div>
             </motion.div>
@@ -216,7 +218,7 @@ export function FinanceIntelligence() {
                         <Search className="text-slate-500" />
                         <input
                             type="text"
-                            placeholder="Ask about revenue, margins, costs, or forecasts..."
+                            placeholder="Ask about churn, pipeline, retention, or segments..."
                             className="bg-transparent border-none outline-none flex-grow text-white placeholder:text-slate-600 h-8"
                             value={question}
                             onChange={(e) => setQuestion(e.target.value)}
@@ -235,9 +237,9 @@ export function FinanceIntelligence() {
                 {!answer && (
                     <div className="flex flex-wrap justify-center gap-3">
                         {[
-                            "Why did revenue drop last week?",
-                            "What is driving cost increases this month?",
-                            "What happens to EBITDA if revenue grows 5%?"
+                            "Why did Customer X churn?",
+                            "Which seller has best retention?",
+                            "Show churn by segment"
                         ].map((q) => (
                             <button
                                 key={q}
@@ -288,7 +290,7 @@ export function FinanceIntelligence() {
                 <div>
                     <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 text-white">2</div>
                     <h3 className="font-bold mb-2">Understands Metrics</h3>
-                    <p className="text-sm text-slate-400">Revenue, costs, margins, and business rules are explicitly defined.</p>
+                    <p className="text-sm text-slate-400">Revenue, churn, pipeline, and segmentation rules are explicitly defined.</p>
                 </div>
                 <div>
                     <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 text-white">3</div>
