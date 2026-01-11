@@ -26,7 +26,7 @@ export function ProposalLanding() {
                 </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-8 w-full max-w-5xl">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl">
                 {/* Solution 1 Card */}
                 <Link to="/visualizer" className="group">
                     <motion.div
@@ -80,6 +80,35 @@ export function ProposalLanding() {
                             </h3>
                             <p className="text-slate-400 mb-6 flex-grow">
                                 Automate common use cases with intelligent partners that work 24/7. Transform manual operations into self-driving systems.
+                            </p>
+                        </div>
+                    </motion.div>
+                </Link>
+
+                {/* Solution 3 Card */}
+                <Link to="/finance" className="group md:col-span-2 lg:col-span-1">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.5 }}
+                        className="h-full bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors relative overflow-hidden group-hover:border-blue-500/50"
+                    >
+                        <div className="absolute top-0 right-0 p-32 bg-blue-500/20 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/30 transition-colors" />
+
+                        <div className="relative z-10 h-full flex flex-col">
+                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform duration-300">
+                                <Brain className="text-white w-6 h-6" />
+                            </div>
+
+                            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                                Solution 3
+                                <ArrowRight className="w-5 h-5 text-slate-500 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
+                            </h2>
+                            <h3 className="text-3xl font-serif mb-4 text-white group-hover:text-blue-300 transition-colors">
+                                AI Finance Intelligence
+                            </h3>
+                            <p className="text-slate-400 mb-6 flex-grow">
+                                An always-on AI finance analyst that explains, prioritizes, and recommends actions. No dashboards, just answers.
                             </p>
                         </div>
                     </motion.div>

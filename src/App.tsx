@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import { WorkflowRedesigner } from './pages/WorkflowRedesigner';
 
 import { ProposalLanding } from './pages/ProposalLanding';
+import { FinanceIntelligence } from './pages/FinanceIntelligence';
 
 function App() {
   return (
@@ -17,8 +18,11 @@ function App() {
               <Link to="/visualizer" className="text-sm font-medium text-slate-400 hidden md:block hover:text-white transition-colors">
                 Turn Napkins into Displai Signage
               </Link>
-              <Link to="/workflows" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
+              <Link to="/workflows" className="text-sm font-medium text-slate-400 hidden md:block hover:text-white transition-colors">
                 Custom AI Agent Workflows
+              </Link>
+              <Link to="/finance" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
+                AI Finance Intelligence
               </Link>
             </div>
           </div>
@@ -28,6 +32,7 @@ function App() {
           <Route path="/" element={<ProposalLanding />} />
           <Route path="/visualizer" element={<Home />} />
           <Route path="/workflows" element={<WorkflowRedesigner />} />
+          <Route path="/finance" element={<FinanceIntelligence />} />
         </Routes>
 
         <StickyCTA />
