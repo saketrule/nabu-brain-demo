@@ -82,7 +82,7 @@ export function FinanceIntelligence() {
 
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div className="text-6xl font-bold font-serif mb-2 text-white">$ 94.42 M</div>
+                        <div className="text-6xl font-bold font-serif mb-2 text-white">$ 1.21 M</div>
                         <div className="text-lg text-slate-400 mb-4">Monthly Revenue (MTD)</div>
                         <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-500/10 text-red-400 rounded-full text-sm font-medium border border-red-500/20">
                             <AlertTriangle size={16} /> 23 accounts at risk
