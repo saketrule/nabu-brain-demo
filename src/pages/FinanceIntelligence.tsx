@@ -22,19 +22,19 @@ export function FinanceIntelligence() {
         // Simulate AI thinking and responding
         setAnswer(null);
         setTimeout(() => {
-            if (q.includes('revenue')) {
+            if (q.toLowerCase().includes('revenue')) {
                 setAnswer({
-                    text: "Revenue dropped 6.8% primarily due to a 12% decline in programmatic ad fill rates in Tier-1 cities (Mumbai, Bangalore). Direct sales remained flat.",
-                    next: "Check 'Programmatic Fill Rate' trends"
+                    text: "Revenue dropped 6.8% primarily due to a 12% decline in Enterprise subscription renewals in the US East region. Direct sales for new licenses remained flat.",
+                    next: "Check 'Renewal Rate' trends"
                 });
-            } else if (q.includes('cost')) {
+            } else if (q.toLowerCase().includes('cost')) {
                 setAnswer({
-                    text: "Operating costs rose 4.1% driven by emergency screen maintenance in North Zone units. This is a one-time anomaly, not a structural increase.",
-                    next: "View maintenance logs"
+                    text: "Operating costs rose 4.1% driven by a spike in cloud rendering usage for high-res video exports. This correlates with the recent feature launch.",
+                    next: "View cloud usage logs"
                 });
             } else {
                 setAnswer({
-                    text: "EBITDA margin will likely compress to 18.2% if revenue trends persist. However, recovering ad fill rates could restore margins to ~21% by next month.",
+                    text: "EBITDA margin will likely compress to 18.2% if trends persist. However, the projected uptake of the 'Spring Menu' promo could restore margins to ~21% by next month.",
                     next: "Run profitability scenario"
                 });
             }
@@ -61,9 +61,9 @@ export function FinanceIntelligence() {
                 <div className="flex items-center justify-center gap-4 text-xs text-slate-500 font-mono">
                     <span className="flex items-center gap-1"><Database size={12} /> Powered by BigQuery</span>
                     <span>•</span>
-                    <span>No SQL</span>
+                    <span>Natural Language Queries</span>
                     <span>•</span>
-                    <span>No dashboards to maintain</span>
+                    <span>Automated Insights + Custom Dashboards</span>
                 </div>
             </motion.div>
 
@@ -80,7 +80,7 @@ export function FinanceIntelligence() {
 
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div className="text-6xl font-bold font-serif mb-2 text-white">₹ 14.2 Cr</div>
+                        <div className="text-6xl font-bold font-serif mb-2 text-white">$ 1.42 M</div>
                         <div className="text-lg text-slate-400 mb-4">Monthly Revenue (MTD)</div>
                         <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-500/10 text-red-400 rounded-full text-sm font-medium border border-red-500/20">
                             <TrendingDown size={16} /> 6.8% vs last month
@@ -95,7 +95,7 @@ export function FinanceIntelligence() {
                             <Sparkles size={12} /> AI Insight
                         </div>
                         <p className="text-slate-300 leading-relaxed">
-                            "Revenue is trending <span className="text-red-400 font-bold">6.8% below last month</span>, primarily driven by a decline in programmatic ad fill rates across Tier-1 cities. Cost of operations remains stable, but EBITDA margin is projected to fall by 2.1% if trends continue."
+                            "Revenue is trending <span className="text-red-400 font-bold">6.8% below last month</span>, primarily driven by a decline in <span className="text-white">Enterprise subscription renewals</span>. Operational costs remain stable, but EBITDA margin is projected to fall by 2.1% if the mix shift to lower-margin design services continues."
                         </p>
                     </div>
                 </div>
@@ -118,13 +118,13 @@ export function FinanceIntelligence() {
                         className="bg-slate-900 border border-white/10 p-6 rounded-2xl hover:border-red-500/30 transition-colors group"
                     >
                         <div className="flex justify-between items-start mb-4">
-                            <div className="text-slate-400 text-sm font-medium">Net Ad Revenue</div>
+                            <div className="text-slate-400 text-sm font-medium">Net Revenue</div>
                             <div className="text-red-400 bg-red-500/10 px-2 py-1 rounded text-xs font-bold flex items-center gap-1">
                                 <TrendingDown size={12} /> 8.3% WoW
                             </div>
                         </div>
                         <p className="text-sm text-slate-300 leading-relaxed mb-4">
-                            The drop is concentrated in Mumbai and Bangalore, where video inventory utilization fell after a pricing rule update on Jan 2.
+                            The drop is concentrated in the US East region, where <span className="text-white">Q1 Menu Refresh campaigns</span> had lower renewal rates than forecasted.
                         </p>
                         <a href="#" className="text-xs text-blue-400 hover:text-blue-300 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                             See supporting data <ArrowRight size={10} />
@@ -146,7 +146,7 @@ export function FinanceIntelligence() {
                             </div>
                         </div>
                         <p className="text-sm text-slate-300 leading-relaxed">
-                            Maintenance costs increased due to unplanned screen downtime, primarily affecting outdoor units deployed before 2022.
+                            <span className="text-white">Cloud rendering costs</span> increased due to high demand for video exports in the new 'Dynamic Boards' feature.
                         </p>
                     </motion.div>
 
@@ -165,7 +165,7 @@ export function FinanceIntelligence() {
                             </div>
                         </div>
                         <p className="text-sm text-slate-300 leading-relaxed">
-                            Margin contraction is driven more by revenue softness than cost inflation, indicating demand-side pressure.
+                            Margin contraction is driven by a shift from high-margin SaaS subscriptions to lower-margin <span className="text-white">Custom Design services</span> this month.
                         </p>
                     </motion.div>
                 </div>
@@ -187,7 +187,7 @@ export function FinanceIntelligence() {
                 <div className="bg-slate-900/50 border border-blue-500/20 rounded-xl p-6 mb-6">
                     <h3 className="text-lg font-semibold text-white mb-2">Primary Recommendation</h3>
                     <p className="text-lg text-slate-200">
-                        "Pause the Jan 2 pricing rule for video ads in Tier-1 cities and re-run A/B pricing tests. <span className="text-green-400 font-bold">This could recover an estimated ₹1.1–₹1.4 Cr in monthly revenue.</span>"
+                        "Launch a 'Spring Menu' promo for Tier-2 restaurants to offset the Enterprise renewal gap. <span className="text-green-400 font-bold">This could recover an estimated $110k–$140k in monthly revenue.</span>"
                     </p>
                 </div>
 
@@ -198,7 +198,7 @@ export function FinanceIntelligence() {
                     </div>
                     <div>
                         <div className="text-slate-500 mb-1">Data used</div>
-                        <div className="text-slate-300">Revenue, Fill Rate, Screen Uptime, Pricing Rules</div>
+                        <div className="text-slate-300">Revenue, Churn Rate, Seasonality, Pricing Models</div>
                     </div>
                     <div>
                         <div className="text-slate-500 mb-1">Time to impact</div>
@@ -293,7 +293,7 @@ export function FinanceIntelligence() {
                 <div>
                     <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4 text-white">3</div>
                     <h3 className="font-bold mb-2">Delivers Automatic Insights</h3>
-                    <p className="text-sm text-slate-400">No manual dashboards. No SQL. No waiting.</p>
+                    <p className="text-sm text-slate-400">Natural language queries. Proactive alerts. Instant charts.</p>
                 </div>
                 <div className="col-span-full mt-4 text-xs text-slate-500">
                     Works alongside Looker and existing BI tools — no replacement required.
@@ -302,11 +302,11 @@ export function FinanceIntelligence() {
 
             {/* 7. Bottom CTA */}
             <div className="bg-slate-900 border border-white/10 rounded-3xl p-12 text-center max-w-3xl mx-auto">
-                <h2 className="text-2xl font-bold mb-6">Why Solution 3 works</h2>
+                <h2 className="text-2xl font-bold mb-6">Why better than simple dashboards</h2>
                 <div className="grid md:grid-cols-3 gap-6 mb-8 text-sm text-slate-300">
-                    <div className="bg-black/20 p-4 rounded-xl">Finance leaders get answers, not charts</div>
-                    <div className="bg-black/20 p-4 rounded-xl">Issues are surfaced proactively</div>
-                    <div className="bg-black/20 p-4 rounded-xl">Decisions are explained in plain English</div>
+                    <div className="bg-black/20 p-4 rounded-xl">Knows what dashboards you need to see</div>
+                    <div className="bg-black/20 p-4 rounded-xl">Explains the "Why" behind the data</div>
+                    <div className="bg-black/20 p-4 rounded-xl">Create complex reports via simple chat</div>
                 </div>
                 <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-xl font-medium transition-colors">
                     Simulate with Displai data
