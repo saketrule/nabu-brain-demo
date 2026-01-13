@@ -40,7 +40,7 @@ export function WorkflowRedesigner() {
                 className="text-center mb-12"
             >
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/20">
-                    <Sparkles size={14} /> Solution 2
+                    <Sparkles size={14} /> Solution 1
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6 bg-gradient-to-r from-white via-white to-slate-400 bg-clip-text text-transparent">
                     Custom AI Agent Workflows

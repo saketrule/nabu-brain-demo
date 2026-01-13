@@ -1,0 +1,87 @@
+CONFIDENTIAL: This proposal contains proprietary information intended solely for Displai’s internal use. Do not distribute without NABU Sciences' written consent.
+
+NABU x Displai
+AI Transformation Proposal  |  January 2026
+What We Heard
+Professional Services: Client intake is chaotic. Assets come from everywhere. Corinne manually organizes everything. Too much time from first email to first design.
+Finance: Churn data may be wrong (spot-checks showed 4/5 'out of business' customers still operating). Need better segmentation. Need to understand why sellers perform differently.
+What We Propose
+Demo: https://saketrule.github.io/nabu-brain-demo/
+The demo shows two solutions for Phase 1, plus Napkins to Signage for Phase 2. This proposal covers Phase 1. See page 2 for the full roadmap.
+Solution 1: Professional Services  (Tools Your Team Keeps Using)
+Client Inbox Organizer: Forward client email, get structured brief back in minutes once client info arrives
+Client Profile Generator: One-click client profile instead of manual assembly
+Status Tracker: See every client's stage at a glance (who's waiting on what)
+Asset Organizer: Auto-categorize uploads, flag quality issues, match to menu items
+What Changes:
+Today: Hours from first email to designer starting. Briefs assembled manually. Status tracked in memory.
+After: Designer starts same day with structured brief. Real-time visibility on every client.
+Industry benchmark: Professional services firms see 70-90% reduction in intake time with similar automation (McKinsey, 2024; Forrester).
+
+
+Solution 2: Business Intelligence  (Analysis + Insights + Prototype)
+Churn Validation: Cross-reference your data against external sources. Find out what's actually happening.
+Segmentation Analysis: Find natural customer groupings. Identify which segments churn and which expand.
+Sales Insights: Compare seller activity controlling for lead quality. Surface what top performers do differently.
+What Changes:
+Today: Churn data you can't trust. Segmentation by gut feel. No idea why Seller A outperforms Seller B.
+After: Validated churn data. AI-discovered segments. Clear answers on sales performance. Prototype you can query.
+Industry benchmark: Companies using AI for churn prediction report 25-40% improvement in retention rates (IBM; Bain & Company).
+
+What We Need From You
+Solution 1: Access to Corinne (1-2 hrs/week), sample client emails and project folders
+Solution 2: Access to Justin + architecture doc Joe mentioned. Analysis deliverables dependent on Salesforce data cleanup completion.
+
+Investment
+$30,000  |  6 Weeks  |  Both Solutions
+Solution 1: ~$20K (tools)  |  Solution 2: ~$10K (analysis)
+
+Next step: If this looks right, we'll send the agreement. We can start as soon as next week.
+
+
+
+The Roadmap
+Where this engagement fits in Displai's AI transformation journey
+The North Star
+Mak's vision: "If we had our own 10, 20 templates that are editable... within a year we could have 50,000. We'd be our own Poster My Wall." The end state is customers logging in, picking a template, customizing it, and publishing to their screens without hand-holding from your team.
+Four Phases to Get There
+PHASE 1
+Foundation
+THIS PROPOSAL
+Intake tools for PS team. Finance analysis.
+PHASE 2
+Acceleration
+NAPKINS TO SIGNAGE
+Instant mockups for sales. Design acceleration.
+PHASE 3
+Scale
+Template library. Learning from every project. Quality at volume.
+PHASE 4
+Self-Serve
+Customers create their own content. 80% self-serve.
+
+How the Demo Maps to This Journey
+Demo
+What It Is
+When
+Solution 1: Custom AI Workflows
+Tools for Corinne's team
+Phase 1 (This Proposal)
+Solution 2: Business Intelligence
+Analysis for Justin's team
+Phase 1 (This Proposal)
+Napkins to Signage
+Instant mockups for PS team
+Phase 2 (What's Next)
+
+How We'll Know It Worked
+Solution 1
+Corinne processes clients faster with less effort. Intake time under 30 min. Team uses tools daily.
+Solution 2
+Churn data validated. Actionable segments identified. Clear answer on seller performance. Prototype Justin can query.
+
+Why Start Here
+Phase 1 builds the foundation everything else depends on. You can't generate instant mockups (Phase 2) until client intake is organized. You can't scale to 50,000 templates (Phase 3) until you have systems that learn. You can't let customers self-serve (Phase 4) until your internal team trusts the AI.
+We start with quick wins that prove value, then expand based on what's working.
+
+NABU Sciences  |  contact@nabusciences.com  |  nabusciences.com

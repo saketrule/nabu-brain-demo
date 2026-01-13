@@ -79,6 +79,9 @@ export const LivePreview: React.FC<LivePreviewProps> = ({ menu, isGenerating }) 
                 <div className="sticky top-0 z-10 py-4 -mt-4 mb-8 bg-inherit/80 backdrop-blur-md">
                     <h1 className={clsx("text-4xl text-center pb-4", styles.header)}>
                         {menu.name}
+                        <div className="text-[10px] font-normal opacity-50 mt-2 tracking-wider uppercase font-sans">
+                            Sample Output - Not generated from input
+                        </div>
                     </h1>
                 </div>
 

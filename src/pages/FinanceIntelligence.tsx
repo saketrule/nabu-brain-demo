@@ -52,13 +52,13 @@ export function FinanceIntelligence() {
                 className="text-center mb-16"
             >
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-wider mb-6 border border-blue-500/20">
-                    <Bot size={14} /> Solution 3
+                    <Bot size={14} /> Solution 2
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4 font-serif">
-                    AI-Powered Finance Intelligence
+                    Business Intelligence
                 </h1>
                 <p className="text-xl text-slate-400 mb-2">
-                    An always-on AI finance analyst built on Displai’s Google Cloud data.
+                    An always-on business analyst built on Displai’s Google Cloud data.
                 </p>
                 <div className="flex items-center justify-center gap-4 text-xs text-slate-500 font-mono">
                     <span className="flex items-center gap-1"><Database size={12} /> Powered by BigQuery</span>
@@ -211,7 +211,7 @@ export function FinanceIntelligence() {
 
             {/* 5. Natural Language Q&A */}
             <div className="max-w-3xl mx-auto mb-20">
-                <h2 className="text-2xl font-bold mb-8 text-center">Ask Finance Anything</h2>
+                <h2 className="text-2xl font-bold mb-8 text-center">Ask Anything</h2>
 
                 <div className="bg-slate-900 border border-white/10 rounded-2xl p-2 mb-8 shadow-2xl">
                     <div className="flex items-center gap-3 px-4 py-3">
